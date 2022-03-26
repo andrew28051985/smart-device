@@ -11,14 +11,14 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: $color-black-pearl-transparent-70;
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
 
   transition: opacity $trans-modal,
-    transform $trans-modal,
-    visibility $trans-modal;
+  transform $trans-modal,
+  visibility $trans-modal;
 
   pointer-events: none;
 

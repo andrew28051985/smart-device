@@ -15,6 +15,17 @@
     background-color: $color-torch-red;
   }
 
+  &--transparent {
+    margin: 0;
+    padding: 10px 15px;
+
+    text-transform: uppercase;
+
+    background: $color-transparent;
+    border: 1px solid $color-alice-blue-7;
+    border-radius: 3px;
+  }
+
   &:disabled {
     opacity: 0.5;
 

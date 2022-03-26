@@ -20,9 +20,33 @@
   </head>
   <body>
     <div class="wrapper">
-      
-      <header>
-        <div class="container">Шапка</div>
+
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__wrapper">
+            <a>
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/svg/logo-mini.svg">
+                <img src="img/svg/logo-full.svg" class="logo" alt="логотип компании Smart Device умные технологии в виде мозга из электических дорожек на печатной плате синего цвета " width="215" height="55">
+              </picture>
+            </a>
+            <div class="page-header__contacts">
+              <a href="mailto:info@sd.ru">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+                </svg>
+                <span>info@sd.ru</span>
+              </a>
+              <a href="tel:+74950005252">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+                </svg>
+                <span>+7 (495) 000 52 52</span>
+              </a>
+            </div>
+            <button class="btn btn--transparent" type="button" data-open-modal="success">Заказать звонок</button>
+          </div>
+        </div>
       </header>
 
       <main>
@@ -32,7 +56,11 @@
             <p>На данной странице показан пример модальных окон.</p>
             <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
             <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <p><a class="btn" href="#" data-open-modal="consultation">modal--success link</a></p>
+            <p>На данной странице показан пример модальных окон.</p>
+            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
+            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+            <p><a class="btn" href="#" data-open-modal="consultation">modal--success link</a></p>
           </div>
         </section>
       </main>
@@ -42,7 +70,7 @@
       </footer>
 
     </div>
-    <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal modal--preload" data-modal="consultation">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
