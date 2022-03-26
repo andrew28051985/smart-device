@@ -3,6 +3,8 @@
   margin: 10px 0;
   padding: 10px 20px;
 
+  font-weight: 700;
+  font-family: $ff-roboto;
   color: $color-default-white;
 
   background-color: $color-neon-blue;
@@ -19,6 +21,8 @@
     margin: 0;
     padding: 10px 15px;
 
+    font-size: 14px;
+    line-height: 16.41px;
     text-transform: uppercase;
 
     background: $color-transparent;
