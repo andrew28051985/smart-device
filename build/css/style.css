@@ -905,6 +905,10 @@ button,
     padding: 0 50px;
   }
 
+  .page-header {
+    position: static;
+  }
+
   .page-header__wrapper {
     -webkit-box-align: start;
     -ms-flex-align: start;
