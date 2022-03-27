@@ -6,7 +6,7 @@
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
-  overflow: hidden;
+  //overflow: hidden;
 
   .header,
   .footer {
@@ -19,10 +19,10 @@
 }
 
 .rouble {
+  font-weight: 400 !important;
   font-family: $ff-rouble;
   /* stylelint-disable */
   text-transform: lowercase !important;
-  font-weight: 400 !important;
   /* stylelint-enable */
 }
 
@@ -65,4 +65,16 @@
 .no-transition {
   /* stylelint-disable-next-line */
   transition: none !important;
+}
+
+.is-active {
+  display: block;
+}
+
+.no-active {
+  display: none;
+}
+
+.no-js {
+  display: block;
 }

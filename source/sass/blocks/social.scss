@@ -1,0 +1,30 @@
+.social {
+  display: grid;
+  align-items: center;
+  margin: 0;
+  margin-left: 10px;
+
+  gap: 15px;
+  grid-template-columns: repeat(3, 40px);
+  @include vp-767 {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+.social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.social li a {
+  display: block;
+  height: 30px;
+}
+
+.social svg {
+  width: 30px;
+  height: 30px;
+}

@@ -6,4 +6,12 @@
     width: 35px;
     height: 35px;
   }
+
+  &--footer {
+    @include vp-767 {
+      width: 215px;
+      height: 55px;
+      margin: 0 auto;
+    }
+  }
 }
