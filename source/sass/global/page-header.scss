@@ -11,7 +11,7 @@
   }
 }
 
-.page-header__wrapper {
+.page-header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,7 @@
   }
 }
 
-.page-header__wrapper a {
+.page-header__nav a {
   display: flex;
   align-items: center;
 
@@ -41,7 +41,7 @@
   }
 }
 
-.page-header__wrapper a:first-child {
+.page-header__nav a:first-child {
   flex-shrink: 0;
   align-self: start;
   &:hover,
@@ -50,7 +50,7 @@
   }
 }
 
-.page-header__wrapper svg {
+.page-header__nav svg {
   width: 20px;
   height: 20px;
   margin-right: 15px;
@@ -60,7 +60,7 @@
   }
 }
 
-.page-header__wrapper span {
+.page-header__nav span {
   display: block;
 
   @include vp-1023 {
@@ -68,7 +68,7 @@
   }
 }
 
-.page-header__wrapper button {
+.page-header__nav button {
   display: block;
   align-self: start;
   margin-top: 5px;
@@ -78,13 +78,17 @@
   }
 }
 
-.page-header__contacts {
+.page-header__contacts-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 480px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 
   @include vp-1023 {
     display: grid;
@@ -100,7 +104,7 @@
   }
 }
 
-.page-header__contacts a {
+.page-header__contacts-item a {
   justify-content: center;
   align-items: center;
 
@@ -110,7 +114,7 @@
   }
 }
 
-.page-header__contacts a:first-child {
+.page-header__contacts-item a:first-child {
   &:hover,
   &:focus {
     opacity: 0.8;

@@ -23,29 +23,33 @@
 
       <header class="page-header">
         <div class="container">
-          <div class="page-header__wrapper">
+          <nav class="page-header__nav">
             <a>
               <picture>
                 <source media="(max-width: 767px)" srcset="img/svg/logo-mini.svg">
                 <img src="img/svg/logo-full.svg" class="logo" alt="логотип компании Smart Device умные технологии в виде мозга из электических дорожек на печатной плате синего цвета " width="215" height="55">
               </picture>
             </a>
-            <div class="page-header__contacts">
-              <a href="mailto:info@sd.ru">
-                <svg width="20" height="20">
-                  <use xlink:href="img/sprite_auto.svg#icon-email"></use>
-                </svg>
-                <span>info@sd.ru</span>
-              </a>
-              <a href="tel:+74950005252">
-                <svg width="20" height="20">
-                  <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
-                </svg>
-                <span>+7 (495) 000 52 52</span>
-              </a>
-            </div>
+            <ul class="page-header__contacts-list">
+              <li class="page-header__contacts-item">
+                <a href="mailto:info@sd.ru">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+                  </svg>
+                  <span>info@sd.ru</span>
+                </a>
+              </li>
+              <li class="page-header__contacts-item">
+                <a href="tel:+74950005252">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+                  </svg>
+                  <span>+7 (495) 000 52 52</span>
+                </a>
+              </li>
+            </ul>
             <button class="btn btn--transparent" type="button" data-open-modal="success">Заказать звонок</button>
-          </div>
+          </nav>
         </div>
       </header>
 
