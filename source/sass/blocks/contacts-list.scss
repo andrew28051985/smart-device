@@ -1,8 +1,9 @@
 .contacts-list {
   margin: 0;
+  padding: 0;
 
   @include vp-767 {
-    margin-top: 15px;
+    padding: 0 25px 20px;
   }
 }
 

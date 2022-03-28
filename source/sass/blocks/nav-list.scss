@@ -1,19 +1,16 @@
 .nav-list {
   display: flex;
-  //display: grid;
   flex-direction: column;
   flex-wrap: wrap;
-  //width: 220px;
   height: 130px;
   margin: 0;
-  //column-gap: 30px;
-  //grid-template-columns: repeat(2, 220px);
+  padding: 0;
 
   @include vp-1023 {
     height: auto;
   }
   @include vp-767 {
-    margin-top: 15px;
+    padding: 0 25px 20px;
   }
 }
 

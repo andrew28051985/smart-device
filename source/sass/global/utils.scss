@@ -67,14 +67,19 @@
   transition: none !important;
 }
 
-.is-active {
-  display: block;
-}
-
 .no-active {
-  display: none;
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
+.is-active,
 .no-js {
   display: block;
+
+  @include vp-767 {
+    margin-top: -5px;
+  }
 }
