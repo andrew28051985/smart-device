@@ -3,11 +3,12 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 3;
 
   background: $perl-to-down;
 
   @include vp-1023 {
-    position: static;
+    position: absolute;
   }
 }
 

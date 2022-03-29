@@ -17,6 +17,31 @@
     background-color: $color-torch-red;
   }
 
+  &--sky-blue {
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 2px;
+    padding: 15px 25px;
+
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-alice-blue-7;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background-color: $color-deep-sky-blue-2;
+    border-radius: 3px;
+
+    @include vp-767 {
+      width: 100%;
+      margin-bottom: 0;
+      padding: 10px 25px;
+
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
   &--transparent {
     margin: 0;
     padding: 10px 15px;
