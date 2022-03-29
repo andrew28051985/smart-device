@@ -55,6 +55,17 @@
     border-radius: 3px;
   }
 
+  &--blue {
+    justify-content: center;
+    padding: 14px 10px;
+
+    font-weight: 700;
+    line-height: 16px;
+    color: $color-deep-sky-blue-2;
+
+    border-color: $color-deep-sky-blue-2;
+  }
+
   &:disabled {
     opacity: 0.5;
 
