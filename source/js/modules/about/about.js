@@ -4,14 +4,14 @@ const button = wrapperDescription.querySelector('button');
 const MIN_LENGTH_DESCRIPTION = 2;
 
 const deletePartDescription = () => {
-  for (let i = 2; i < descriptionList.length; i++) {
+  for (let i = MIN_LENGTH_DESCRIPTION; i < descriptionList.length; i++) {
     descriptionList[i].remove();
     button.textContent = 'подробнее';
   }
 };
 
 const appendPartDescription = () => {
-  for (let i = 2; i < descriptionList.length; i++) {
+  for (let i = MIN_LENGTH_DESCRIPTION; i < descriptionList.length; i++) {
     wrapperDescription.insertBefore(descriptionList[i], button);
     button.textContent = 'свернуть';
   }
