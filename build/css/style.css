@@ -952,6 +952,10 @@ button,
   pointer-events: none;
 }
 
+.btn--no-js-description {
+  display: none;
+}
+
 .modal {
   position: fixed;
   top: 0;

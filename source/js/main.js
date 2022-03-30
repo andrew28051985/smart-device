@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {accordion} from './modules/accordion/accordion';
+import {getMinimazeAbout} from './modules/about/about';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     accordion();
+    getMinimazeAbout();
   });
 });
 
