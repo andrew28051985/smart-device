@@ -52,13 +52,13 @@
   font-size: 20px;
   line-height: 30px;
 
-  @include vp-767 {
+  @include vp-1023 {
     max-width: 150px;
   }
 }
 
 .goods-services__wrapper h3 br {
-  @include vp-767 {
+  @include vp-1023 {
     display: none;
   }
 }
@@ -115,7 +115,7 @@
 
   object-fit: cover;
 }
-
+/*
 .goods-services__wrapper ul > li:first-child img {
   object-position: -180px -161px;
 }
@@ -129,7 +129,7 @@
 .goods-services__wrapper ul > li:last-child img {
   object-position: -890px -161px;
 }
-
+*/
 .goods-services__arrow {
   position: absolute;
   right: 0;
