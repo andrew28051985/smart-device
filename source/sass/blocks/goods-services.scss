@@ -1,0 +1,156 @@
+.goods-services {
+  background-color: $color-black-pearl;
+}
+
+.goods-services__wrapper {
+  padding: 70px 1px 140px;
+
+  @include vp-1023 {
+    padding: 60px 0 75px;
+  }
+}
+
+.goods-services__wrapper h2,
+.goods-services__wrapper h3 {
+  margin: 0;
+
+  font-weight: 400;
+  font-family: $ff-roboto;
+  color: $color-default-white;
+}
+
+.goods-services__wrapper h2:first-child {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 51px;
+
+  @include vp-767 {
+    display: none;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.goods-services__wrapper h2:nth-child(2n) {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.goods-services__wrapper h3 {
+  position: sticky;
+  z-index: 2;
+
+  font-size: 20px;
+  line-height: 30px;
+
+  @include vp-767 {
+    max-width: 150px;
+  }
+}
+
+.goods-services__wrapper h3 br {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.goods-services ul {
+  position: relative;
+
+  display: grid;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 30px;
+  grid-template-columns: repeat(3, minmax(270px, 1fr));
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.goods-services li {
+  position: relative;
+
+  max-width: 350px;
+  height: 650px;
+  padding: 50px 80px 0 40px;
+  overflow: hidden;
+
+  @include vp-1023 {
+    max-width: 100%;
+    height: 250px;
+  }
+  @include vp-767 {
+    padding: 30px 90px 30px 30px;
+  }
+}
+
+.goods-services a:hover,
+.goods-services a:focus {
+  opacity: 0.8;
+}
+
+.goods-services img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 125%;
+
+  object-fit: cover;
+}
+
+.goods-services__wrapper ul > li:first-child img {
+  object-position: -180px -161px;
+}
+
+.goods-services__wrapper ul > li:nth-child(2n) img {
+  height: 125%;
+
+  object-position: -530px -161px;
+}
+
+.goods-services__wrapper ul > li:last-child img {
+  object-position: -890px -161px;
+}
+
+.goods-services__arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $color-deep-sky-blue-2;
+  border-radius: 3px 0 0 0;
+}
+
+.goods-services__arrow svg {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 2;
+
+  width: 15px;
+  height: 15px;
+
+  fill: transparent;
+}
