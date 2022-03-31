@@ -1401,22 +1401,6 @@ button,
   object-fit: cover;
 }
 
-/*
-.goods-services__wrapper ul > li:first-child img {
-  object-position: -180px -161px;
-}
-
-.goods-services__wrapper ul > li:nth-child(2n) img {
-  height: 125%;
-
-  object-position: -530px -161px;
-}
-
-.goods-services__wrapper ul > li:last-child img {
-  object-position: -890px -161px;
-}
-*/
-
 .goods-services__arrow {
   position: absolute;
   right: 0;
