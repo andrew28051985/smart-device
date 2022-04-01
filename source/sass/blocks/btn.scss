@@ -66,6 +66,10 @@
     border-color: $color-deep-sky-blue-2;
   }
 
+  &--dark {
+    background-color: $color-black-pearl;
+  }
+
   &:disabled {
     opacity: 0.5;
 

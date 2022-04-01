@@ -74,7 +74,7 @@
   list-style: none;
 
   gap: 30px;
-  grid-template-columns: repeat(3, minmax(270px, 1fr));
+  grid-template-columns: repeat(3, minmax(270px, 350px));
   @include vp-1023 {
     grid-template-columns: 1fr;
   }

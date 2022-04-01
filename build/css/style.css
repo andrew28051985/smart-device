@@ -947,6 +947,10 @@ button,
   border-color: #00b2ff;
 }
 
+.btn--dark {
+  background-color: #041827;
+}
+
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -1371,8 +1375,8 @@ button,
   padding: 0;
   list-style: none;
   gap: 30px;
-  -ms-grid-columns: (minmax(270px, 1fr))[3];
-  grid-template-columns: repeat(3, minmax(270px, 1fr));
+  -ms-grid-columns: (minmax(270px, 350px))[3];
+  grid-template-columns: repeat(3, minmax(270px, 350px));
 }
 
 .goods-services li {
@@ -1420,6 +1424,177 @@ button,
   width: 15px;
   height: 15px;
   fill: transparent;
+}
+
+.feedback {
+  background: #00b3ff -o-linear-gradient(131deg, #00b3ff 67%, rgba(4, 24, 39, 0.5) 43%);
+  background: #00b3ff linear-gradient(-41deg, #00b3ff 67%, rgba(4, 24, 39, 0.5) 43%);
+}
+
+.feedback h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.feedback small {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding-left: 5px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 170px 12px 250px 0;
+}
+
+.feedback h3,
+.feedback small,
+.feedback label,
+.feedback input,
+.feedback textarea,
+.feedback input::-webkit-input-placeholder,
+.feedback textarea::-webkit-input-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.feedback form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  max-width: 585px;
+  padding-left: 5px;
+}
+
+.feedback input {
+  width: 47.45%;
+  max-width: 275;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.feedback input:hover,
+.feedback input:focus,
+.feedback textarea:hover,
+.feedback textarea:focus {
+  outline: 1px solid rgba(4, 20, 39, 0.15);
+  opacity: 0.8;
+}
+
+.feedback textarea {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  min-height: 155px;
+  margin-bottom: 35px;
+  padding: 25px 15px;
+}
+
+.feedback input,
+.feedback textarea {
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.feedback input[type=checkbox] {
+  left: 0;
+}
+
+.feedback label {
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.feedback-form input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -26px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.feedback-form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -24px;
+  width: 10px;
+  height: 8px;
+  background: url("../img/sprite/icon-check.svg") no-repeat;
+}
+
+.feedback-form input[type="checkbox"] + label:hover,
+.feedback-form input[type="checkbox"] + label:focus,
+.feedback-form input[type="checkbox"]:focus + label {
+  opacity: 0.6;
+}
+
+.feedback-form input[type="checkbox"]:hover + label::before,
+.feedback-form input[type="checkbox"]:focus + label::before {
+  border: none;
+  border: 1 solid #ffffff;
+  opacity: 0.6;
+}
+
+.feedback form button {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+  min-width: 265px;
+  margin: 0;
+  padding: 15px 25px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 3px;
+}
+
+.feedback-form__wrapper-checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5;
+  max-width: 250px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

@@ -1,0 +1,146 @@
+.feedback {
+  background: $color-deep-sky-blue-3 linear-gradient(-41deg,$color-deep-sky-blue-3 67%, $color-black-pearl-transparent-50 43%);
+}
+
+.feedback h3 {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  font-family: $ff-roboto;
+  color: $color-default-white;
+}
+
+.feedback small {
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  padding-left: 5px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 170px 12px 250px 0;
+}
+
+.feedback h3,
+.feedback small,
+.feedback label,
+.feedback input,
+.feedback textarea,
+.feedback input::-webkit-input-placeholder,
+.feedback textarea::-webkit-input-placeholder {
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.feedback form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 585px;
+  padding-left: 5px;
+}
+
+.feedback input {
+  width: 47.45%;
+  max-width: 275;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.feedback input:hover,
+.feedback input:focus,
+.feedback textarea:hover,
+.feedback textarea:focus {
+  outline: 1px solid $color-black-pearl-transparent-15;
+  opacity: 0.8;
+}
+
+.feedback textarea {
+  flex-basis: 100%;
+  min-height: 155px;
+  margin-bottom: 35px;
+  padding: 25px 15px;
+}
+
+.feedback input,
+.feedback textarea {
+  background-color: $color-black-pearl-transparent-15;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.feedback input[type=checkbox] {
+  left: 0;
+}
+
+.feedback label {
+  font-size: 14px;
+  line-height: 16px;
+
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.feedback-form input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -26px;
+
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.feedback-form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -24px;
+
+  width: 10px;
+  height: 8px;
+
+  background: url("../img/sprite/icon-check.svg") no-repeat;
+}
+
+.feedback-form input[type="checkbox"] + label:hover,
+.feedback-form input[type="checkbox"] + label:focus,
+.feedback-form input[type="checkbox"]:focus + label {
+  opacity: 0.6;
+}
+
+.feedback-form input[type="checkbox"]:hover + label::before,
+.feedback-form input[type="checkbox"]:focus + label::before {
+  border: none;
+  border: 1 solid $color-default-white;
+  opacity: 0.6;
+}
+
+.feedback form button {
+  justify-content: center;
+  order: 4;
+  min-width: 265px;
+  margin: 0;
+  padding: 15px 25px;
+
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  border-radius: 3px;
+}
