@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {accordion} from './modules/accordion/accordion';
 import {getMinimazeAbout, getMinimazeMobile} from './modules/about/about';
+import {scrollToLink} from './utils/scroll-link';
 
 // ---------------------------------
 
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  scrollToLink();
   getMinimazeMobile();
 
   // Modules
