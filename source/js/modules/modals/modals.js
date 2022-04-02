@@ -7,6 +7,7 @@ export class Modals {
     this._focusLock = new FocusLock();
 
     this._modalOpenElements = document.querySelectorAll('[data-open-modal]');
+    this._inputName = document.querySelector('#name-modal');
     this._openedModalElement = null;
     this._modalName = null;
     this._enableScrolling = true;
@@ -135,10 +136,12 @@ export class Modals {
 
   open(modalName = this._modalName) {
     const modal = document.querySelector(`[data-modal="${modalName}"]`);
+    const nameModal = document.querySelector('#name-modal');
 
     if (!modal || modal.classList.contains('is-active')) {
       return;
     }
+
 
     document.removeEventListener('click', this._documentClickHandler);
 
@@ -148,6 +151,8 @@ export class Modals {
       this._enableScrolling = false;
       this.close(this._openedModalElement.dataset.modal);
     }
+
+    nameModal.focus();
 
     this._setSettings(modalName);
     modal.classList.add('is-active');
