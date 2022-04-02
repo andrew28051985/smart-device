@@ -6,7 +6,7 @@
   }
 }
 
-.feedback h3 {
+.feedback-form h3 {
   margin: 0;
   margin-bottom: 15px;
 
@@ -27,7 +27,7 @@
   }
 }
 
-.feedback small {
+.feedback-form small {
   display: block;
   margin: 0;
   margin-bottom: 35px;
@@ -74,17 +74,17 @@
   max-width: 510px;
 }
 
-.feedback small,
-.feedback label,
-.feedback input,
-.feedback textarea,
-.feedback input::-webkit-input-placeholder,
-.feedback textarea::-webkit-input-placeholder {
+.feedback-form small,
+.feedback-form label,
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder {
   line-height: 22px;
   color: $color-default-white;
 }
 
-.feedback form {
+.feedback-form form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -98,7 +98,7 @@
   }
 }
 
-.feedback input {
+.feedback-form input {
   width: 47.45%;
   max-width: 275;
   margin-bottom: 20px;
@@ -109,15 +109,15 @@
   }
 }
 
-.feedback input:hover,
-.feedback input:focus,
-.feedback textarea:hover,
-.feedback textarea:focus {
+.feedback-form input:hover,
+.feedback-form input:focus,
+.feedback-form textarea:hover,
+.feedback-form textarea:focus {
   outline: 1px solid $color-black-pearl-transparent-15;
   opacity: 0.8;
 }
 
-.feedback textarea {
+.feedback-form textarea {
   flex-basis: 100%;
   min-height: 155px;
   margin-bottom: 35px;
@@ -128,19 +128,19 @@
   }
 }
 
-.feedback input,
-.feedback textarea {
+.feedback-form input,
+.feedback-form textarea {
   background-color: $color-black-pearl-transparent-15;
   border: none;
   border-radius: 3px;
   cursor: pointer;
 }
 
-.feedback input[type=checkbox] {
+.feedback-form input[type=checkbox] {
   left: 0;
 }
 
-.feedback label {
+.feedback-form label {
   font-size: 14px;
   line-height: 16px;
 
@@ -186,7 +186,7 @@
   opacity: 0.6;
 }
 
-.feedback form button {
+.feedback-form form button {
   justify-content: center;
   order: 4;
   min-width: 265px;

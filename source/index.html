@@ -48,7 +48,7 @@
                 </a>
               </li>
             </ul>
-            <button class="btn btn--transparent" type="button" data-open-modal="success" tabindex="4">Заказать звонок</button>
+            <button class="btn btn--transparent" type="button" data-open-modal="consultation" tabindex="4">Заказать звонок</button>
           </nav>
         </div>
       </header>
@@ -351,9 +351,31 @@
     <div class="modal modal--preload" data-modal="consultation">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <div class="modal__content modal__content--consultation">
+          <div class="modal__content-wrapper">
+            <div class="feedback-form">
+              <h3>
+                Закажите звонок
+              </h3>
+              <small>
+                Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время
+              </small>
+              <form action="https://echo.htmlacademy.ru" method="POST" target="_blank" autocomplete="off">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" minlength="1" maxlength="50" required tabindex="20">
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" minlength="5" maxlength="11" required tabindex="21">
+                <label class="visually-hidden" for="questions">Ваш вопрос</label>
+                <textarea name="questions" id="questions" placeholder="Ваш вопрос" tabindex="22"></textarea>
+                <div class="feedback-form__wrapper-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="personal-data-modal" id="personal-data-modal" checked required tabindex="24">
+                  <label for="personal-data-modal">Я согласен на обработку персональных данных</label>
+                </div>
+                <button class="btn btn--dark" type="submit" tabindex="23">отправить</button>
+              </form>
+            </div>
+          </div>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal tabindex="24">
             <svg width="15" height="15">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
