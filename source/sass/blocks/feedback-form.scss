@@ -1,8 +1,14 @@
 .feedback-form {
+  position: relative;
+
   min-width: 550px;
 
   @include vp-1023 {
     min-width: 100%;
+  }
+
+  & .invalid {
+    border-right: 15px solid $color-torch-red-transparent-70;
   }
 }
 

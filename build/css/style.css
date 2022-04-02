@@ -1659,7 +1659,12 @@ button,
 }
 
 .feedback-form {
+  position: relative;
   min-width: 550px;
+}
+
+.feedback-form .invalid {
+  border-right: 15px solid rgba(255, 21, 83, 0.7);
 }
 
 .feedback-form__wrapper-checkbox {
@@ -1675,6 +1680,14 @@ button,
   order: 5;
   max-width: 260px;
   padding-left: 30px;
+}
+
+.error {
+  position: absolute;
+  bottom: -45px;
+  padding: 0;
+  font-weight: 600;
+  color: rgba(255, 21, 83, 0.7);
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -2208,5 +2221,9 @@ button,
 
   .feedback-form__wrapper-checkbox {
     margin-right: 0;
+  }
+
+  .error {
+    bottom: -75px;
   }
 }

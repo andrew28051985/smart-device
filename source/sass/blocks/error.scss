@@ -1,0 +1,13 @@
+.error {
+  position: absolute;
+  bottom: -45px;
+
+  padding: 0;
+
+  font-weight: 600;
+  color: $color-torch-red-transparent-70;
+
+  @include vp-767 {
+    bottom: -75px;
+  }
+}

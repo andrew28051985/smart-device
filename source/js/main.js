@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {accordion} from './modules/accordion/accordion';
 import {getMinimazeAbout, getMinimazeMobile} from './modules/about/about';
 import {scrollToLink} from './utils/scroll-link';
+import {validityForm, sendUserFormData, feedbackForm, modalForm, inputPhoneFeedback, inputPhoneModal, inputNameFeedback, inputNameModal} from './modules/form/form';
 
 // ---------------------------------
 
@@ -24,6 +25,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     accordion();
     getMinimazeAbout();
+    validityForm(inputPhoneFeedback, inputNameFeedback);
+    validityForm(inputPhoneModal, inputNameModal);
+    sendUserFormData(feedbackForm);
+    sendUserFormData(modalForm);
   });
 });
 
