@@ -1,8 +1,24 @@
+.feedback-form {
+  min-width: 550px;
+
+  @include vp-1023 {
+    min-width: 100%;
+  }
+}
+
 .feedback-form__wrapper-checkbox {
   position: relative;
 
   display: flex;
   justify-content: flex-end;
   order: 5;
-  max-width: 250px;
+  max-width: 260px;
+  padding-left: 30px;
+
+  @include vp-1023 {
+    margin-right: 60px;
+  }
+  @include vp-767 {
+    margin-right: 0;
+  }
 }
