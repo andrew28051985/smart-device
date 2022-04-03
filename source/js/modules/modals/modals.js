@@ -71,7 +71,6 @@ export class Modals {
 
   _documentClickHandler(evt) {
     const target = evt.target;
-
     if (!target.closest('[data-open-modal]')) {
       return;
     }
@@ -107,6 +106,7 @@ export class Modals {
   }
 
   _addListeners(modal) {
+    this._inputName.focus();
     modal.addEventListener('click', this._modalClickHandler);
     document.addEventListener('keydown', this._documentKeydownHandler);
   }
@@ -136,7 +136,6 @@ export class Modals {
 
   open(modalName = this._modalName) {
     const modal = document.querySelector(`[data-modal="${modalName}"]`);
-    const nameModal = document.querySelector('#name-modal');
 
     if (!modal || modal.classList.contains('is-active')) {
       return;
@@ -151,8 +150,6 @@ export class Modals {
       this._enableScrolling = false;
       this.close(this._openedModalElement.dataset.modal);
     }
-
-    nameModal.focus();
 
     this._setSettings(modalName);
     modal.classList.add('is-active');

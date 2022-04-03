@@ -1,4 +1,7 @@
-const validityInputNumber = /^[0-9]{1,10}$/;
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+const validityInputName = /^[А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23}$/;
+const validityInputNumber = /^[+]{1}[7]{1}[(]{1}[0-9]{1,10}[)]{1}[0-9]{1,10}$/;
 const feedbackSection = document.querySelector('.feedback');
 const feedbackForm = feedbackSection.querySelector('.feedback-form');
 const inputPhoneFeedback = feedbackForm.querySelector('#phone');
@@ -7,9 +10,14 @@ const modalSection = document.querySelector('.modal__content-wrapper');
 const modalForm = modalSection.querySelector('.feedback-form');
 const inputPhoneModal = modalForm.querySelector('#phone-modal');
 const inputNameModal = modalForm.querySelector('#name-modal');
-const MIN_LENGTH_PHONE = 10;
-const MAX_LENGTH_PHONE = 10;
+const MIN_LENGTH_PHONE = 14;
+const MAX_LENGTH_PHONE = 14;
 const URL_SERVER = 'https://echo.htmlacademy.ru';
+const maskPhone = {
+  mask: '+7(000)0000000',
+  lazy: true,
+  placeholderChar: '',
+};
 
 const onInputValueMissing = (evt) => {
   const field = evt.target;
@@ -36,10 +44,12 @@ const setFormValidityOk = (evt) => {
 const validityForm = (namePhone, name) => {
   namePhone.addEventListener('input', (evt) => {
     const lengthInputPhone = namePhone.value.length;
+    const maskFeedback = new IMask(inputPhoneFeedback, maskPhone);
+    const maskModal = new IMask(inputPhoneModal, maskPhone);
 
     if (!validityInputNumber.test(namePhone.value)) {
       onInputValueError(evt);
-      namePhone.setCustomValidity('Номера телефона должен содержать только цыфры');
+      namePhone.setCustomValidity('Формат номера: +7(000)0000000');
     } else if (lengthInputPhone < MIN_LENGTH_PHONE) {
       onInputValueError(evt);
       namePhone.setCustomValidity(`Еще нужно ввести минимум ${MIN_LENGTH_PHONE - lengthInputPhone} цыфр`);
@@ -54,7 +64,10 @@ const validityForm = (namePhone, name) => {
   });
   name.addEventListener('input', (evt) => {
     const lengthInputName = name.value.length;
-    if (lengthInputName > 0) {
+    if (!validityInputName.test(name.value)) {
+      onInputValueError(evt);
+      name.setCustomValidity('Имя должно содержать только буквы и начинаться с заглавной');
+    } else if (lengthInputName > 0) {
       name.setCustomValidity('');
       setFormValidityOk(evt);
     } else {
