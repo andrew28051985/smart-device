@@ -3,10 +3,13 @@
 }
 
 .goods-services__wrapper {
-  padding: 70px 1px 140px;
+  padding: 64px 1px 140px;
 
   @include vp-1023 {
-    padding: 60px 0 75px;
+    padding: 54px 0 75px;
+  }
+  @include vp-767 {
+    padding: 46px 0 87px;
   }
 }
 
@@ -20,11 +23,14 @@
 }
 
 .goods-services__wrapper h2:first-child {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 
   font-size: 36px;
   line-height: 51px;
 
+  @include vp-1023 {
+    margin-bottom: 37px;
+  }
   @include vp-767 {
     display: none;
 
@@ -38,7 +44,7 @@
 
   @include vp-767 {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
 
     font-size: 28px;
     line-height: 39px;
@@ -54,6 +60,10 @@
 
   @include vp-1023 {
     max-width: 150px;
+  }
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -85,15 +95,16 @@
 
   max-width: 350px;
   height: 650px;
-  padding: 50px 80px 0 40px;
+  padding: 48px 80px 0 40px;
   overflow: hidden;
 
   @include vp-1023 {
     max-width: 100%;
     height: 250px;
+    padding: 38px 80px 0 45px;
   }
   @include vp-767 {
-    padding: 30px 90px 30px 30px;
+    padding: 26px 90px 30px 30px;
   }
 }
 
@@ -121,7 +132,7 @@
   bottom: 0;
   z-index: 2;
 
-  width: 60px;
+  width: 61px;
   height: 60px;
 
   background-color: $color-deep-sky-blue-2;
@@ -140,7 +151,7 @@
   z-index: 2;
 
   width: 15px;
-  height: 15px;
+  height: 11px;
 
   fill: transparent;
   @include vp-767 {

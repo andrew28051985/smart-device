@@ -15,7 +15,9 @@
   margin-right: 100px;
 
   @include vp-1023 {
+    margin-top: 6px;
     margin-right: 29px;
+    margin-left: -4px;
   }
   @include vp-767 {
     display: none;
@@ -29,7 +31,7 @@
 
 .about-company__wrapper-description h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 
   font-weight: 400;
   font-size: 36px;
@@ -45,7 +47,7 @@
 
 .about-company__wrapper-description p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   line-height: 22px;
 
@@ -55,15 +57,16 @@
   }
 }
 
-.about-company__wrapper-description p:last-child {
-  margin-bottom: 20px;
-}
-
 .about-company__wrapper-description button {
   align-self: flex-start;
   min-width: 180px;
+  margin-top: 20px;
 
+  @include vp-1023 {
+    margin-top: -4px;
+  }
   @include vp-767 {
     min-width: 160px;
+    margin-top: -8px;
   }
 }

@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px 1px 55px;
+  padding: 51px 1px 55px;
 
   @include vp-1023 {
     flex-wrap: wrap;
@@ -41,7 +41,7 @@
     flex-basis: 100%;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   @include vp-767 {
     flex-direction: column;
@@ -153,7 +153,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 19px;
+
+  letter-spacing: 0.05em;
 
   @include vp-767 {
     margin-bottom: 0;
@@ -186,16 +189,16 @@
   font-family: $ff-roboto;
   color: $color-default-white;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 
   background: transparent;
   border: none;
   cursor: default;
 
   @include vp-767 {
-    height: 60px;
+    height: 52px;
     padding: 0 25px;
   }
-
 
   &--tab-js {
     @include vp-767 {
@@ -203,8 +206,21 @@
     }
   }
 
+  &--plus,
+  &--minus {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+
   &--no-js {
     display: none;
+
+    @include vp-767 {
+      display: none;
+    }
   }
 }
 

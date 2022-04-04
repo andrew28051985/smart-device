@@ -72,26 +72,28 @@
     &--consultation {
       width: 500px;
       padding: 40px;
+      padding-bottom: 43px;
 
       background: $color-deep-sky-blue-3;
+      border-radius: 3px;
 
       & .feedback-form {
         min-width: 100%;
       }
 
       & .feedback-form h3 {
-        margin-bottom: 20px;
+        margin-bottom: 3px;
 
         font-size: 30px;
         line-height: 42px;
       }
 
       & .feedback-form small {
-        margin-bottom: 40px;
+        margin-bottom: 37px;
         padding-left: 0;
 
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 16px;
+        line-height: 21px;
       }
 
       & .feedback-form form {
@@ -103,14 +105,24 @@
         flex-basis: 100%;
       }
 
+      & .feedback-form textarea {
+        margin-bottom: 25px;
+      }
+
       & .feedback-form form button {
         flex-basis: 100%;
         margin-right: 0;
-        margin-bottom: 25px;
+        margin-bottom: 18px;
+      }
+
+      & .feedback-form__wrapper-checkbox {
+        margin-left: 14px;
       }
 
       & .feedback-form label {
         flex-basis: 100%;
+
+        letter-spacing: 0.12px;
       }
 
       & .feedback-form__wrapper-checkbox {
@@ -131,8 +143,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 17px;
+    right: 14px;
     z-index: 1;
 
     width: 40px;
