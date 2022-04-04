@@ -206,8 +206,8 @@
     }
   }
 
-  &--plus,
-  &--minus {
+  &-svg--plus,
+  &-svg--minus {
     display: none;
 
     @include vp-767 {
@@ -215,7 +215,7 @@
     }
   }
 
-  &--no-js {
+  &-svg--no-js {
     display: none;
 
     @include vp-767 {
@@ -224,7 +224,7 @@
   }
 }
 
-.page-footer__button--js {
+.page-footer__button-svg--js {
   display: none;
 
   @include vp-767 {

@@ -885,16 +885,16 @@ button,
   cursor: default;
 }
 
-.page-footer__button--plus,
-.page-footer__button--minus {
+.page-footer__button-svg--plus,
+.page-footer__button-svg--minus {
   display: none;
 }
 
-.page-footer__button--no-js {
+.page-footer__button-svg--no-js {
   display: none;
 }
 
-.page-footer__button--js {
+.page-footer__button-svg--js {
   display: none;
 }
 
@@ -2089,16 +2089,16 @@ button,
     cursor: pointer;
   }
 
-  .page-footer__button--plus,
-  .page-footer__button--minus {
+  .page-footer__button-svg--plus,
+  .page-footer__button-svg--minus {
     display: block;
   }
 
-  .page-footer__button--no-js {
+  .page-footer__button-svg--no-js {
     display: none;
   }
 
-  .page-footer__button--js {
+  .page-footer__button-svg--js {
     display: inline-block;
     font-size: 25px;
     vertical-align: baseline;

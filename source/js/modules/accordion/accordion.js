@@ -5,30 +5,30 @@ const descriptionNav = footerNav.querySelector('dd');
 const footerContacts = footer.querySelector('.page-footer__contacts');
 const buttonContacts = footerContacts.querySelector('.page-footer__button');
 const descriptionContacts = footerContacts.querySelector('dd');
-const plusNav = buttonNav.querySelector('.page-footer__button--plus');
-const plusContact = buttonContacts.querySelector('.page-footer__button--plus');
+const plusNav = buttonNav.querySelector('.page-footer__button-svg--plus');
+const plusContact = buttonContacts.querySelector('.page-footer__button-svg--plus');
 
 const getButtonActive = (evt, isActiveTab) => {
   const buttons = footer.querySelectorAll('button');
   buttons.forEach((button) => {
-    const plus = button.querySelector('.page-footer__button--plus');
-    const minus = button.querySelector('.page-footer__button--minus');
+    const plus = button.querySelector('.page-footer__button-svg--plus');
+    const minus = button.querySelector('.page-footer__button-svg--minus');
     if ((button === evt.target || plus === evt.target || minus === evt.target) && !isActiveTab) {
-      plus.classList.add('page-footer__button--no-js');
-      plus.classList.remove('page-footer__button--js');
-      minus.classList.remove('page-footer__button--no-js');
+      plus.classList.add('page-footer__button-svg--no-js');
+      plus.classList.remove('page-footer__button-svg--js');
+      minus.classList.remove('page-footer__button-svg--no-js');
     } else {
-      minus.classList.add('page-footer__button--no-js');
-      plus.classList.remove('page-footer__button--no-js');
+      minus.classList.add('page-footer__button-svg--no-js');
+      plus.classList.remove('page-footer__button-svg--no-js');
     }
   });
 };
 
 const accordion = () => {
-  plusContact.classList.remove('page-footer__button--no-js');
-  plusNav.classList.remove('page-footer__button--no-js');
-  plusContact.classList.add('page-footer__button--js');
-  plusNav.classList.add('page-footer__button--js');
+  plusContact.classList.remove('page-footer__button-svg--no-js');
+  plusNav.classList.remove('page-footer__button-svg--no-js');
+  plusContact.classList.add('page-footer__button-svg--js');
+  plusNav.classList.add('page-footer__button-svg--js');
   descriptionNav.classList.add('no-active');
   descriptionContacts.classList.add('no-active');
   buttonNav.classList.add('page-footer__button--tab-js');
