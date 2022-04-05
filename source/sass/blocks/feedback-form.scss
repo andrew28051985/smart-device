@@ -142,7 +142,7 @@
   cursor: pointer;
 }
 
-.feedback-form input[type=checkbox] {
+.feedback-form input[type="checkbox"] {
   top: 15px;
   left: 0;
 }
@@ -206,7 +206,6 @@
 
 .feedback-form input[type="checkbox"]:hover + label::before,
 .feedback-form input[type="checkbox"]:focus + label::before {
-  border: none;
   border: 1 solid $color-default-white;
   opacity: 0.6;
 }

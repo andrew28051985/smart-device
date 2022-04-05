@@ -1,5 +1,5 @@
 .feedback {
-  background: $color-deep-sky-blue-3 linear-gradient(-41deg,$color-deep-sky-blue-3 66.5%, $color-black-pearl-transparent-50 66.6%);
+  background: $color-deep-sky-blue-3 linear-gradient(-41deg, $color-deep-sky-blue-3 66.5%, $color-black-pearl-transparent-50 66.6%);
 
   @include vp-1023 {
     background: $color-deep-sky-blue-3;
@@ -19,6 +19,7 @@
     padding: 48px 0 87px;
   }
 }
+
 .feedback__wrapper picture {
   margin-bottom: -22px;
   padding-right: 20px;

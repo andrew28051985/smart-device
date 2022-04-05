@@ -16,9 +16,7 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity $trans-modal,
-  transform $trans-modal,
-  visibility $trans-modal;
+  transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
 
   pointer-events: none;
 
@@ -115,10 +113,6 @@
         margin-bottom: 18px;
       }
 
-      & .feedback-form__wrapper-checkbox {
-        margin-left: 14px;
-      }
-
       & .feedback-form label {
         flex-basis: 100%;
 
@@ -129,6 +123,7 @@
         align-items: flex-end;
         max-width: 100%;
         margin-right: 0;
+        margin-left: 14px;
       }
 
       & .feedback-form input[type="checkbox"] + label::before {
