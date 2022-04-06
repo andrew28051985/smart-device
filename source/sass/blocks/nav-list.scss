@@ -1,12 +1,13 @@
 .nav-list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 145px;
+  width: 220px;
+  //height: 145px;
   margin: 0;
   padding: 0;
 
   @include vp-1023 {
+    flex-direction: column;
     height: auto;
   }
   @include vp-767 {
@@ -30,4 +31,18 @@
     width: 200px;
     margin-right: 0;
   }
+}
+
+.nav-list:first-child {
+  @include vp-1023 {
+    padding-bottom: 0;
+  }
+}
+
+.nav-list:first-child li {
+  flex-shrink: 0;
+}
+
+.nav-list:last-child li {
+  margin-right: 0;
 }
