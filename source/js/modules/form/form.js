@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-const validityInputName = /^[А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23}$/;
 const validityInputNumber = /^[+]{1}[7]{1}[(]{1}[0-9]{1,10}[)]{1}[0-9]{1,10}$/;
 const feedbackSection = document.querySelector('.feedback');
 const feedbackForm = feedbackSection.querySelector('.feedback-form');
@@ -64,10 +63,7 @@ const validityForm = (namePhone, name) => {
   });
   name.addEventListener('input', (evt) => {
     const lengthInputName = name.value.length;
-    if (!validityInputName.test(name.value)) {
-      onInputValueError(evt);
-      name.setCustomValidity('Имя должно содержать только буквы и начинаться с заглавной');
-    } else if (lengthInputName > 0) {
+    if (lengthInputName > 0) {
       name.setCustomValidity('');
       setFormValidityOk(evt);
     } else {
